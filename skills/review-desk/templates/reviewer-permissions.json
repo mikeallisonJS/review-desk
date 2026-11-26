@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Agent",
+      "Task",
+      "TodoWrite"
+    ],
+    "deny": [
+      "Bash",
+      "Write",
+      "Edit",
+      "MultiEdit",
+      "NotebookEdit",
+      "WebFetch",
+      "WebSearch",
+      "SendMessage",
+      "ListAgents",
+      "Workflow",
+      "Monitor",
+      "Artifact",
+      "ArtifactComments",
+      "ArtifactData",
+      "CronCreate",
+      "CronDelete",
+      "ScheduleWakeup",
+      "RemoteTrigger",
+      "PushNotification",
+      "EnterWorktree",
+      "ExitWorktree",
+      "Read(~/.config/**)",
+      "Read(~/.claude/**)",
+      "Read(~/.claude.json)",
+      "Read(~/.ssh/**)",
+      "Read(~/.local/share/**)",
+      "Read(~/.git-credentials)",
+      "Read(~/.netrc)",
+      "Read(~/.aws/**)",
+      "Read(~/.docker/**)",
+      "Read(**/.env)",
+      "Read(**/.env.*)"
+    ]
+  },
+  "enableAllProjectMcpServers": false,
+  "disableAllHooks": true
+}
