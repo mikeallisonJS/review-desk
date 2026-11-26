@@ -7,6 +7,10 @@ Review Desk isn't an app you install. It's a **recipe** your own coding agent bu
 your repos, your chat and your agent harness. It can run inside the harness as scheduled tasks, or as a small
 service on a machine that's always on.
 
+![A Review Desk page: two reviews waiting on you with the reviewer's verdicts, and your own pull requests sorted by what they need, with a stack of three shown in merge order](screenshot.png)
+
+<sub>The working setup's page, with made-up people and repos.</sub>
+
 ## What it does
 
 **Reviews people ask you for.** Review Desk notices when someone requests your review on GitHub, or asks in a chat
