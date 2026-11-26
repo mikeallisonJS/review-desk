@@ -240,7 +240,7 @@ Sort every tracked PR by whose move it is:
 - **Waiting on the author:** the owner's latest review asked for changes or commented; *New commits* (moved since
   the review, with no re-request or ping yet); *Not ready yet* (with the reason).
 - **Approved:** the owner approved the latest head, not merged yet.
-- **Background:** marked handled, then merged or closed PRs for a week.
+- **Done:** nobody's move: marked handled, then merged or closed PRs for a week.
 
 ### A8. Posting a review
 
@@ -457,7 +457,7 @@ Show each group as one card, named by the parent issue, collapsible to a one-lin
 - A static `index.html` with its data inlined, plus `data.json`, rewritten every minute. An open page refetches
   `data.json` every minute and re-renders in place, keeping open panels, focus and scroll.
 - **Tabs**: *All* (the default on each load), *Needs you*, *Yours*, *With the reviewer*, *Waiting on the author*,
-  *Approved*, *Background*, each with its count. The counts in the top line open their tab, and `#section` links open
+  *Approved*, *Done*, each with its count. The counts in the top line open their tab, and `#section` links open
   on their tab.
 - **Filters**: organization and repository (narrowing everything, including the top line), person, and sort (most
   urgent, newest, oldest, last pushed, smallest, largest, by repo). Remember them in `localStorage` (wrapped in
