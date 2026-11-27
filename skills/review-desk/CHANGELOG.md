@@ -4,6 +4,12 @@ What changed in the recipe, newest first. Each entry is dated, and that date is 
 build up to date, read the entries after the version it records, and take the ones you want (the `review-desk`
 skill walks through it). Section numbers refer to `RECIPE.md` as of that entry.
 
+## 2026-11-27
+
+- **A failed search for your PRs keeps the last list (8, GitHub gotchas).** B1's search gets a cut-short reply now
+  and then, and an empty list in its place told the owner they had no open PRs. Retry up to three times, then keep
+  the last good list for up to 10 minutes from when it was fetched.
+
 ## 2026-11-25
 
 First published version. It covers:

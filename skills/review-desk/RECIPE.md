@@ -1,6 +1,6 @@
 # Review Desk: the recipe
 
-Recipe version: **2026-11-25** (see `CHANGELOG.md`)
+Recipe version: **2026-11-27** (see `CHANGELOG.md`)
 
 This is a recipe for your agent, not a product to install. Hand it this folder (the `review-desk` skill: this
 file, `SKILL.md`, `CHANGELOG.md` and `templates/`), and it builds a Review Desk shaped to how you work: which
@@ -523,6 +523,10 @@ If you want an agent in your browser to be able to use the page:
 - **Review bots' comments don't change `reviewDecision`.** Count unresolved threads yourself (B2).
 - **Nested connections multiply rate-limit cost.** Check `rateLimit(dryRun: true) { cost }` for every query you
   add, and fetch details for the few nodes that need them in a second query by id.
+- **A big search sometimes comes back cut short** (`gh`: "unexpected end of JSON input"), about one reply in fifteen
+  for B1's query. Retry it, and if it still fails, keep the last good list (with the time it was fetched, so a run of
+  failures can't keep it forever; 10 minutes in the working setup). Never render an empty list for a failed query: it
+  reads as "nothing open".
 - **Post reviews pinned to `commit_id`**, so a review can't land on a head you didn't see.
 - **Turning merge commits off** (`PATCH /repos/{o}/{r} allow_merge_commit=false`) makes squash the default in the
   merge button's eyes. Only do it in repos you own or have been asked to change.
